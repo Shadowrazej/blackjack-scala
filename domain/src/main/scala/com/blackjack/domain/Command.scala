@@ -1,7 +1,7 @@
 package main.scala.com.blackjack.domain
 
 import com.blackjack.anyval.{GameId, PlayerId}
-import com.blackjack.domain.BetAmount
+import main.scala.com.blackjack.anyval.BetAmount
 
 sealed trait Command
 
