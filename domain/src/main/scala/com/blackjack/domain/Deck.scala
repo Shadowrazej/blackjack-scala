@@ -11,7 +11,7 @@ case class Deck(cards: List[Card] = deck) {
   // I think I can use dealFirstCard to deal random cards from the console
   // deal specific card => possibility to deal specific card
   // should I store such function "dealCard" in the class "Deck"? Is there better place?
-  def dealFirstCard(card: Card): Option[Deck] = {
+  def dealTopCard(): Option[Deck] = {
     cards match {
       case head :: tail => Some(Deck(tail))
       case _ => None
